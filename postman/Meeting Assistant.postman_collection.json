@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "3fc94d07-0a0c-45b0-859a-3f0456ce0996",
+		"name": "Meeting Assistant",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/createCalender/qa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/createCalender/qa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createCalender",
+						"qa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/createMeeting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"users\":[\"qa\",\"ws\"],\n    \"day\": \"MON\",\n  \"time\": 1530\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/createMeeting",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createMeeting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cancelMeeting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"users\":[\"qa\",\"ws\"],\n    \"day\": \"QWE\",\n  \"time\":1130\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cancelMeeting",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cancelMeeting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/checkSlots",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"users\":[\"qa\",\"ws\"],\n\"day\":\"MON\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/checkSlots",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"checkSlots"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/deleteCalender/qa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deleteCalender/qa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteCalender",
+						"qa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
